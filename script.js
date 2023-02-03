@@ -15,10 +15,38 @@ const popupTwoOpen = document.querySelector('.popup-open_two');
 const popupThreeOpen = document.querySelector('.popup-open_three');
 
 
+
+
 const togglePopup = function(popup) {
-    popup.classList.toggle('.popup__opened');
+    popup.classList.toggle('popup__opened');
 };
+
+
+//open popup function
+
 
 popupOneOpen.addEventListener('click', () => {
    togglePopup(popupOne); 
-})
+});
+
+popupTwoOpen.addEventListener("click", () => {
+  togglePopup(popupTwo);
+});
+
+popupThreeOpen.addEventListener("click", () => {
+  togglePopup(popupThree);
+});
+
+//closed popup function
+
+popupOneClose.addEventListener("click", () => {
+  togglePopup(popupOne);
+});
+
+popupTwoClose.addEventListener("click", () => {
+  togglePopup(popupTwo);
+});
+
+popupThreeClose.addEventListener("click", () => {
+  togglePopup(popupThree);
+});

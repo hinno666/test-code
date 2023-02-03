@@ -1,4 +1,6 @@
-
+body {
+  background: #000;
+}
 
 .popup {
   position: absolute;
@@ -8,6 +10,7 @@
   height: 300px;
   display: none;
   transform: translate(-50%, -50%);
+  border: 5px white solid;
 }
 .popup__opened {
   display: block;
@@ -18,6 +21,8 @@
   height: 20px;
   cursor: pointer;
   border: 1px black solid;
+  background: white;
+  margin-left: auto;
 }
 
 .popup__one {
@@ -30,4 +35,10 @@
 
 .popup__three {
   background-color: red;
+}
+
+p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
 }
